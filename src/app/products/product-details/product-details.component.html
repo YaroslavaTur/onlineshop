@@ -1,0 +1,8 @@
+<div class='product-details'>
+    <h2>{{product.title}}</h2>
+    <p>Категорія: {{product.category | uppercase}}</p>
+    <img src="{{product.image}}" width="250px" height="250px" alt="Foto">
+    <p>{{product.price | currency}}</p>
+    <p>{{product.description}}</p>
+    <button (click)="addtoCart(product)">Купити</button>
+</div>

@@ -1,0 +1,23 @@
+<div>
+    <select (change)="onCategoryChange($event)">
+      <option value="">Всі категорії</option>
+      <option *ngFor="let category of categories" [value]="category">{{ category }}</option>
+    </select>
+
+    Сортувати за: <button (click)="sortByPrice('desc')"> за зменшенням ціни</button> <button (click)="sortByPrice('asc')"> за збільшенням ціни</button>
+  </div>
+<div class="contain_products">
+<div class="eachproduct" *ngFor="let product of displayProduct">
+    <h2>{{product.title}}</h2>
+    <img src="{{product.image}}" width="200px" height="200px" alt="foto of product">
+    <p>{{product.price | currency}}</p>
+    <button (click)="viewProduct(product.id)">Детальніше</button>
+    <button (click)="addtoCart(product)">Купити</button>
+</div>
+</div>
+<div>
+  <div class="remote_buttons">
+    <button (click)="prevPage()">&lt;</button><button (click)="nextPage()">&gt;</button>
+    <div><span id="minimumPage">{{ minPage }}</span> / <span id="maximumPage">{{ maxPage }}</span></div>
+</div>
+</div>

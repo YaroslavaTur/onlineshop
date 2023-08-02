@@ -1,0 +1,22 @@
+<h2>Всі кошики</h2>
+<div>
+  <label for="startdate">Початкова дата</label>
+  <input type="date" name="startdate" [(ngModel)]="startDate">
+  <label for="enddate">Кінцева дата</label>
+  <input type="date" name="enddate" [(ngModel)]="endDate">
+  <br>
+  <button (click)="filterbyDateCarts()">Вивести кошики</button>
+  <button (click)="clearFilter()">Скинути фільтр</button>
+</div>
+
+<div class="cartAdmin" *ngFor="let cart of carts">
+    <p>Номер по порядку: {{ cart.id }}</p>
+    <p>Користувач: {{ cart.userId }}</p>
+    <p>Дата: {{ cart.date | date:'medium' }}</p>
+    <p>До сплати: {{ cart.totalPrice | currency }}</p>
+    <hr />
+    <button (click)="viewCart(cart.id)">Дивитися перелік придбаних товарів</button>
+  </div>
+  <div>
+    <h2>Загальна вартість всіх покупок: {{ totalSum | currency }}</h2>
+  </div>

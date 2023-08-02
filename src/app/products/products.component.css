@@ -1,0 +1,32 @@
+
+.contain_products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.eachproduct {
+    padding: 10px;
+    border: 2px solid coral;
+    width: 500px;
+    border-radius: 15px;
+    margin: 15px;
+    color: white;
+}
+
+h2 {
+    font-size: 20px;
+}
+.remote_buttons {
+    text-align: center;
+}
+
+select {
+    width: 200px;
+    border: 1px solid coral;
+    color: white;
+    background-color: coral;
+    font-family: "Montserrat";
+    font-size: 16px;
+    border-radius: 15px;
+}

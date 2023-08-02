@@ -1,0 +1,7 @@
+<h2>Інформація про кошик користувача</h2>
+<p>Користувач: {{ cart.userId }}</p>
+<p>Дата: {{ cart.date | date:'short' }}</p>
+<h3>Перелік придбаних товарів:</h3>
+<ul>
+  <li *ngFor="let i of cart.products">{{ i.productId }} - {{ i.quantity }} шт.</li>
+</ul>

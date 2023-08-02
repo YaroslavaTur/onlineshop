@@ -1,0 +1,34 @@
+header {
+    width: 100%;
+    height: 80px;
+    background-color: coral;
+    margin-bottom: 30px;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    justify-items: center;
+    align-items:center;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    align-self: center;
+    margin-top: 30px;
+}
+
+.cart-count {
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    padding: 4px;
+    border-radius: 50%;
+    margin-left: 5px;
+  }
+  
+  .empty {
+    display: none; 
+  }

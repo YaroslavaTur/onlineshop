@@ -1,0 +1,18 @@
+.cartAdmin {
+    padding: 10px;
+    border: 2px solid coral;
+    width: 500px;
+    border-radius: 15px;
+    margin: 15px;
+    color: white;
+}
+
+input {
+    border: 2px solid coral;
+    border-radius: 15px;
+    color: white;
+    background-color: coral;
+    font-family: "Montserrat";
+    margin-left: 10px;
+    margin-right: 10px;
+}

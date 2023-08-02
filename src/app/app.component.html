@@ -1,0 +1,8 @@
+<header>
+  <nav>
+  <a href="products/products.component.ts" routerLink="products">Каталог</a>
+  <a href="#" routerLink="cart">Кошик<span class="cart-count {{ cart ? '' : 'empty' }}">{{ cartCount }}</span></a>
+  <a href="#" routerLink="admin">Панель адміна</a>
+  </nav>
+</header>
+<router-outlet></router-outlet>

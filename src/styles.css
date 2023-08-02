@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  background-color: #1D1B2B;
+  color: white;
+  font-family: "Montserrat";
+}
+
+button {
+    width: 200px;
+    background-color: coral;
+    border: 1px solid coral;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Montserrat";
+}
